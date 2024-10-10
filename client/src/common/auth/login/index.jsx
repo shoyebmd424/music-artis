@@ -33,7 +33,7 @@ const Login = () => {
   return (
     <form action="" onSubmit={handleSubmit(onSubmit)}>
       <h2 className="text-purple text-center">Login</h2>
-      <div className="d-flex flex-column gap-4">
+      <div className="d-flex flex-column gap-sm-4 gap-3 ">
         {fields?.map((val, index) => (
           <div key={index} className="field">
             <label htmlFor="">{val?.label}</label>
@@ -95,7 +95,7 @@ const Login = () => {
         <div>
           <button className="btn-purple w-100">Submit</button>
         </div>
-        <div className="text-center fw-600 d-flex gap-2 justify-content-center">
+        <div className="text-center fw-600 d-sm-flex gap-2 justify-content-center">
           <span>Don't have Account,</span>
           <Link to="/auth/register" className="text-purple">
             Create Account

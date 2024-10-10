@@ -18,6 +18,9 @@
     }
     .auth-form{
         background: $transparent-dark;
+        @media (max-width:500px) {
+            padding: 20px;
+        }
         .field{
             position: relative;
             z-index: 1;

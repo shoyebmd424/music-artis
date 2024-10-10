@@ -25,12 +25,12 @@ const AuthLayout = () => {
       </div>
       {lastUrl==='register'&&<>
         <div className="auth-welcome-card ">
-          <div className="col-3 col-lg-4 col-md-5 col-sm-7 mx-auto">
+          <div className="col-10 col-lg-4 col-md-5 col-sm-7 mx-auto">
             <img src={cardImage} alt="" className="w-100 h-100" />
           </div>
         </div></>}
         <div className="auth-com col-lg-5 col-md-6 col-sm-9 col-11">
-            <div  className="auth-form p30 rounded-3">
+            <div  className="auth-form p30  rounded-3">
         <Outlet/>
             </div>
         </div>
