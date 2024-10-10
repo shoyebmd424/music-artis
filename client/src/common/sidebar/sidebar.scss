@@ -1,0 +1,75 @@
+
+@import '@/assets/styles/veriable';
+
+$time:700ms;
+
+.sidebar-upper{
+  width: 270px;
+  transition: all $time;
+  transition-timing-function: linear;
+}
+.side-open{
+width: 70px;
+transition: all $time;
+}
+
+.sidebar{
+    background:$secondary;
+    height: 100vh;
+    padding: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    .close{
+      width: 0 !important;
+      overflow: hidden;
+      transition: all $time;
+    }
+    .side-closer{
+      position: absolute;
+      z-index: 2;
+      right: 0px;
+      cursor: pointer;
+    }
+    .sidebar-list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a{
+            padding: 12px 10px;
+        &:hover {
+            background-color: $purple;
+            border-radius:  14px 0px 0px 14px;
+          }
+          
+          &.active {
+            background-color: $purple;
+            color: #fff !important;
+            border-radius:  14px 0px 0px 14px;
+          }
+          &.active svg,&.active span{
+            color: white;
+          }
+          &.active .active-icon{
+            display: block;
+          }
+        li{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            svg{
+                font-size: 20px;
+                color: $purple;
+            }
+        }
+    }
+    }
+
+}
+.active-icon{
+    display: none;
+}
+.more{
+  right: 12px !important;
+}

@@ -1,0 +1,37 @@
+@import "@/assets/styles/veriable";
+.auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+    .head-tag{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        .logo-tag{
+            height: 50px;
+        }
+    }
+    .auth-form{
+        background: $transparent-dark;
+        .field{
+            position: relative;
+            z-index: 1;
+        .password-tg{
+            position: absolute;
+            right: 15px;
+            top: 60%;
+            z-index: 3;
+            cursor: pointer;
+            &.pass-err{
+                top: 45%;
+            }
+        }
+    }
+    }
+   
+}

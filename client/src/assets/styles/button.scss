@@ -1,0 +1,10 @@
+@import "./veriable";
+.btn-purple{
+    background: $purple;
+    color: $dark;
+    padding: 12px 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+}

@@ -1,0 +1,34 @@
+@import "./veriable";
+.field{
+    border-radius: 8px;
+    display: flex ;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    label{
+        color: $purple; 
+        font-weight: 600;
+        font-size: 17px;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        span{
+            color: $secondary;
+            font-weight: 400 !important;
+        }
+    }
+    input{
+        background: $light-white;
+        border:  2px solid $border;
+        outline: transparent;
+        color: $purple;
+        border: none;
+        border-radius: inherit;
+        padding: 12px 10px;
+        width: 100%;
+        font-weight: 500;
+    }
+    small{
+        color: $red;
+    }
+}

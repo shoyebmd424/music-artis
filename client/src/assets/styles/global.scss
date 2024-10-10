@@ -1,0 +1,56 @@
+@import "./veriable";
+body{
+    background: $dark-nature !important;
+    color:$secondary !important;
+    font-family: $font, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.bg-dark-nature{
+    background: $dark-nature;
+}
+.bg-secondary{
+    background: $secondary;
+}
+.bg-purple{
+    background: $purple;
+}
+.bg-light-white{
+    background: $light-white;
+}
+.text-dark-nature{
+    color: $dark-nature;
+}
+.text-light-white{
+    color: $secondary !important;
+}
+.text-purple{
+    color: $purple;
+}
+.text-red{
+color: $red;
+}
+.border-2{
+    border: 2px solid $border;
+}
+.inset-0{
+    inset: 0 !important;
+}
+
+$font-weights: (200, 300, 400, 500, 600, 700,bold);
+
+@each $weight in $font-weights {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+@for $i from 1 through 100 {
+    .fs#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+@for $i from 1 through 100 {
+    .p#{$i} {
+      padding: #{$i}px;
+    }
+  }

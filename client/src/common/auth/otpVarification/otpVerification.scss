@@ -1,0 +1,37 @@
+@import "@/assets/styles/veriable";
+
+.otp-varification{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+.otp-varification-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+
+  .p-inputotp {
+    justify-content: center;
+    margin: 0 auto;
+    .p-inputtext {
+      &::placeholder {
+        color: #ccc;
+        opacity: 1; 
+      }
+  
+      &:focus::placeholder {
+        color: transparent;
+      }
+    }
+    .p-inputotp-input {
+        padding: 10px;
+      &::placeholder {
+        content: '-' !important;
+      }
+    }
+  }
+  
+ 
+}
+}
