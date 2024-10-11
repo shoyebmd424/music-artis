@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./sidebar.scss";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/auth/Copy of Untitled Design (320 x 132 px) (1).png";
 import { NavLink } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa6";
 import { MdMenu } from "react-icons/md";

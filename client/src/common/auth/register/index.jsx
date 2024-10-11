@@ -104,7 +104,6 @@ const Register = () => {
         </div>))}
         <div><button className="btn-purple w-100">Submit</button></div>
         <div className="text-center fw-600 d-flex gap-2 justify-content-center"> <span>Aready Account</span><Link to="/auth/login" className="text-purple">  Login</Link></div>
-
         </div>
       </form>
     </div>

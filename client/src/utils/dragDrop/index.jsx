@@ -58,12 +58,12 @@ const FileUploadDrop = ({ file, onFileSelect }) => {
     >
       {file ? (
         <div>
-          <div>File Selected: {file.name}</div>
+          <div> {file.name}</div>
         </div>
       ) : (
-        <div className="d-flex justify-content-between text-dark align-items-center px-4 gap-2">
+        <div className="d-flex justify-content-center justify-content-sm-between flex-column flex-sm-row  text-dark align-items-center px-4 gap-2">
           <BsCloudUpload size={30} className="my-auto fw-bold" />
-          <span className="me-auto">Drag and drop files here</span>
+          <span className="me-sm-auto mx-auto">Drag and drop files here</span>
           <button className="btn-purple py-1">Browse files</button>
         </div>
       )}
